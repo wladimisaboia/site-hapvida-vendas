@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.hapvida-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f97306;
+    color: white;
+    padding: 20px;
+}
+
+.hapvida-benefits h1 {
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(33.33% - 30px);
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.benefit h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.simulate-plan {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #1e488f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.simulate-plan:hover {
+    background-color: #003366;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp img {
+    width: 50px;
+    height: 50px;
+}
+
+.carencias {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.carencias h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1e488f;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.event {
+    background-color: #f0f0f0;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.event:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+.event .time {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.event .details {
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.full-width-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .benefit {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .benefit {
+        flex-basis: calc(100% - 30px);
+    }
+
+    .event {
+        width: 90%;
+    }
+}
+
+#rede-de-atendimento {
+    background-color: #f97306; /* mesma cor de fundo da seção .hapvida-benefits */
+    color: white;
+}
+
+#rede-de-atendimento h2 {
+    color: white; /* cor do texto */
+}
+
+#rede-de-atendimento .rounded-lg {
+    overflow: hidden;
+    background-color: white; /* fundo branco para contraste */
+}
+
+#rede-de-atendimento img {
+    object-fit: contain; /* Ajuste para exibir a imagem completa */
+    width: 100%;
+    height: auto;
+}
+
+#rede-de-atendimento button {
+    margin: 0 10px;
+}
+
+.text-blue-600 {
+    color: #1e3a8a; /* Azul */
+}
+/* Responsivo para a navegação */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 8px 0;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Para garantir que o menu fique acima do conteúdo */
+}
+
+main {
+    padding-top: 80px; /* Altura do menu de navegação */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para telas menores que 600px de largura */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para telas maiores que 600px e menores que 1024px */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos para telas maiores que 1024px */
+}
