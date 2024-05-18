@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapvida</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <header id="header"class="fixed-nav bg-blue-900 shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-lg font-semibold text-white">
+                <img src="assets/img/hap-inter-logo.png" alt="Logo Hapvida" style="height: 30px;">
+            </a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#header" class="text-gray-100 hover:text-white">Página Inicial</a></li>
+                    <li><a href="#planos" class="text-gray-100 hover:text-white">Planos</a></li>
+                    <li><a href="#beneficios" class="text-gray-100 hover:text-white">Benefícios</a></li>
+                    <li><a href="#rede-de-atendimento" class="text-gray-100 hover:text-white">Rede de atendimento</a></li>
+                    <li><a href="#carencias" class="text-gray-100 hover:text-white">Carências</a></li>
+                    <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+estou+em+seu+site+e+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" class="text-gray-100 hover:text-white" target="_blank">Contratar plano</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- Banner -->
+    <section class="full-width-image">
+        <img src="assets/img/banner-hap.png" alt="Imagem 1" class="full-width">
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios"class="hapvida-benefits">
+        <h1>Quem tem Hapvida, conta com:</h1>
+        <div class="benefit" data-aos="fade-up">
+            <img src="assets/img/enfermeira-hap.png" alt="Rede Exclusiva">
+            <h2>Rede Exclusiva</h2>
+            <p>Com 87 hospitais próprios, 77 prontos atendimentos, 331 clínicas e 269 centros de diagnóstico por imagem e coleta laboratorial.</p>
+        </div>
+        <div class="benefit" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/telefone-hap.png" alt="Teleconsulta">
+            <h2>Teleconsulta</h2>
+            <p>De onde estiver: você pode fazer suas consultas preventivas ou mesmo ter atendimento básico pela teleconsulta, no seu smartphone, tablet ou computador.</p>
+        </div>
+        <div class="benefit" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/dental-care-hap.png" alt="Odontologia">
+            <h2>Odontologia</h2>
+            <p>Só no Hapvida, você tem um plano completo de odontologia incluso, com prevenção, diagnóstico, urgência 24h e cobertura em todo Brasil.</p>
+        </div>
+        <div class="benefit" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/atendimento-hap.png" alt="Atendimento ao cliente 24h">
+            <h2>Atendimento ao cliente 24h</h2>
+            <p>A sua saúde não pode esperar e por isso, temos uma equipe exclusiva para te ajudar com marcações de consulta, exames e autorizações.</p>
+        </div>
+        <div class="benefit" data-aos="fade-up" data-aos-delay="400">
+            <img src="assets/img/bebe-hap.png" alt="Rede Pediátrica Exclusiva">
+            <h2>Rede Pediátrica Exclusiva</h2>
+            <p>A maior rede de atendimento infantil, com UTI neonatal, acompanhamento pediátrico e uma infraestrutura moderna.</p>
+        </div>
+        <div class="benefit" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/chat-icone.png" alt="Chat Hapvida">
+            <h2>Chat Hapvida</h2>
+            <p>Faça agendamentos, solicite autorizações e tire as suas dúvidas pelo nosso chat.</p>
+        </div>
+        <button class="simulate-plan">Simule seu plano!</button>
+    </section>
+
+    <!--  
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Escolha o Melhor Plano de Saúde</h1>
+            <p class="text-xl mb-8">Garanta o seu bem-estar e o da sua família com nossos planos de saúde.</p>
+            <a href="#" class="bg-white text-blue-600 hover:bg-blue-700 hover:text-white px-8 py-3 rounded-full font-semibold transition">Saiba Mais</a>
+        </div>
+    </section>-->
+
+    <!-- Planos -->
+    <section id="planos" class="bg-gray-100 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Nossos Planos</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full sm:w-1/3 mb-8 px-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4">Plano Familiar</h3>
+                        <div class="text-xl font-semibold mb-4">R$200,00</div>
+                        <div class="mb-4">00 a 18 anos</div>
+                        <ul class="mb-4 text-left">
+                            <li><i class="fas fa-check text-green-500"></i> Sem Coparticipação</li>
+                            <li><i class="fas fa-check text-green-500"></i> Médico Ambulatorial</li>
+                            <li><i class="fas fa-check text-green-500"></i> Obstetricia</li>
+                            <li><i class="fas fa-check text-green-500"></i> Hospitalar</li>
+                            <li><i class="fas fa-check text-green-500"></i> Urgência e Emergência</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+estou+em+seu+site+e+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold block text-center transition duration-300 hover:bg-blue-600">CONTRATAR</a>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/3 mb-8 px-4" data-aos="fade-up">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
+                        <span class="bg-yellow-400 text-white px-3 py-1 rounded-full mb-4 inline-block">+ VENDIDO</span>
+                        <h3 class="text-2xl font-bold mb-4">Plano Coparticipação</h3>
+                        <div class="text-xl font-semibold mb-4">R$150,06</div>
+                        <div class="mb-4">00 a 18 anos</div>
+                        <ul class="mb-4 text-left">
+                            <li><i class="fas fa-check text-green-500"></i> Coparticipação</li>
+                            <li><i class="fas fa-check text-green-500"></i> Médico Ambulatorial</li>
+                            <li><i class="fas fa-check text-green-500"></i> Obstetricia</li>
+                            <li><i class="fas fa-check text-green-500"></i> Hospitalar</li>
+                            <li><i class="fas fa-check text-green-500"></i> Urgência e Emergência</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+estou+em+seu+site+e+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold block text-center transition duration-300 hover:bg-blue-600">CONTRATAR</a>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/3 mb-8 px-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4">Plano Empresarial</h3>
+                        <div class="text-xl font-semibold mb-4">R$250,00</div>
+                        <div class="mb-4">00 a 18 anos</div>
+                        <ul class="mb-4 text-left">
+                            <li><i class="fas fa-check text-green-500"></i> Sem Coparticipação</li>
+                            <li><i class="fas fa-check text-green-500"></i> Médico Ambulatorial</li>
+                            <li><i class="fas fa-check text-green-500"></i> Obstetricia</li>
+                            <li><i class="fas fa-check text-green-500"></i> Hospitalar</li>
+                            <li><i class="fas fa-check text-green-500"></i> Urgência e Emergência</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+estou+em+seu+site+e+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold block text-center transition duration-300 hover:bg-blue-600">CONTRATAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rede de Atendimento -->
+    <section id="rede-de-atendimento" class="py-20 bg-orange-600 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Rede de Atendimento</h2>
+            <div class="flex justify-center items-center">
+                <button id="prev" class="bg-blue-500 text-white px-4 py-2 rounded-full font-semibold transition duration-300 hover:bg-blue-600">Anterior</button>
+                <div class="w-full sm:w-2/3 px-4">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-black">
+                        <img id="hospital-img" src="assets/img/hospital-aldeota.png" alt="Foto do Hospital" class="mb-4 w-full h-auto rounded-lg">
+                        <h3 id="hospital-name" class="text-2xl font-bold mb-2 text-blue-600">Hospital Aldeota</h3>
+                        <p id="hospital-location" class="text-lg">Av. Pe. Antônio Tomás, 2056 - Aldeota - Fortaleza - CE</p>
+                    </div>
+                </div>
+                <button id="next" class="bg-blue-500 text-white px-4 py-2 rounded-full font-semibold transition duration-300 hover:bg-blue-600">Próximo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carências -->
+    <section id="carencias"class="carencias py-20">
+        <div class="container mx-auto text-center">
+            <h1>Quais são as Carências?</h1>
+            <div class="timeline">
+                <div class="event" data-aos="fade-up">
+                    <div class="time">24 horas</div>
+                    <div class="details">Urgência e Emergência</div>
+                </div>
+                <div class="event" data-aos="fade-up" data-aos-delay="100">
+                    <div class="time">30 dias</div>
+                    <div class="details">Consultas médicas, exames laboratoriais simples, raio-x simples e eletrocardiograma</div>
+                </div>
+                <div class="event" data-aos="fade-up" data-aos-delay="200">
+                    <div class="time">60 dias</div>
+                    <div class="details">Odontologia</div>
+                </div>
+                <div class="event" data-aos="fade-up" data-aos-delay="300">
+                    <div class="time">90 dias</div>
+                    <div class="details">Exames: Cardiológicos simples como: teste ergométrico, holter, ecocardiograma convencional (exceto alta complexidade); Oftalmológicos simples como: curva tensional, tonometria, campimetria, mapeamento de retina (exceto alta complexidade); Otorrinolaringológicos simples como: audiometrias e impedanciometria (exceto alta complexidade), pesquisa de Potencial Evocado (exceto alta complexidade); Raio-X Contrastado (exceto alta complexidade); Exames de ultrassonografia (Exceto procedimentos endoscópicos ou alta complexidade).</div>
+                </div>
+                <div class="event" data-aos="fade-up" data-aos-delay="400">
+                    <div class="time">180 dias</div>
+                    <div class="details">Consultas/sessões e terapias simples, especiais, isoladas e multidisciplinares (como psicoterapia, fonoaudiologia, nutricionista, fisioterapia e terapia ocupacional). Internação hospitalar, cirurgias ambulatoriais, exames de alta complexidade (tomografia, ressonância, endoscopia).</div>
+                </div>
+                <div class="event" data-aos="fade-up" data-aos-delay="500">
+                    <div class="time">300 dias</div>
+                    <div class="details">Para cobertura de partos à termo.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Wladimi Sabóia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <main>
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
