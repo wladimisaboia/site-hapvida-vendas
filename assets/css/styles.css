@@ -136,15 +136,15 @@ body {
 }
 
 .event {
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     border: 1px solid #dcdcdc;
-    border-radius: 5px;
-    padding: 10px;
-    width: 80%;
+    border-radius: 8px; 
+    padding: 20px; 
+    width: 100%;
     max-width: 600px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; 
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -154,14 +154,17 @@ body {
 }
 
 .event .time {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
-    color: #333;
+    color: #1e488f;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .event .details {
     font-size: 1em;
-    color: #666;
+    color: #333; 
+    text-align: center;
 }
 
 footer {
