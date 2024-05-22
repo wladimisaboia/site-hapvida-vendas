@@ -1,8 +1,36 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
+}
+
+.fixed-nav {
+    background-color: #1e3a8a;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+    opacity: 0.8;
 }
 
 .transition {
@@ -174,21 +202,21 @@ footer p {
 }
 
 #rede-de-atendimento {
-    background-color: #f97306; /* mesma cor de fundo da seção .hapvida-benefits */
+    background-color: #f97306;
     color: white;
 }
 
 #rede-de-atendimento h2 {
-    color: white; /* cor do texto */
+    color: white;
 }
 
 #rede-de-atendimento .rounded-lg {
     overflow: hidden;
-    background-color: white; /* fundo branco para contraste */
+    background-color: white;
 }
 
 #rede-de-atendimento img {
-    object-fit: contain; /* Ajuste para exibir a imagem completa */
+    object-fit: contain;
     width: 100%;
     height: auto;
 }
@@ -200,6 +228,7 @@ footer p {
 .text-blue-600 {
     color: #1e3a8a; /* Azul */
 }
+
 /* Responsivo para a navegação */
 @media (max-width: 768px) {
     header .container {
@@ -231,25 +260,24 @@ footer p {
         display: none;
     }
 }
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Para garantir que o menu fique acima do conteúdo */
+    z-index: 1000;
 }
 
 main {
-    padding-top: 80px; /* Altura do menu de navegação */
+    padding-top: 80px
 }
 
 @media only screen and (max-width: 600px) {
-  /* Estilos para telas menores que 600px de largura */
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos para telas maiores que 600px e menores que 1024px */
+
 }
 
 @media only screen and (min-width: 1025px) {
-  /* Estilos para telas maiores que 1024px */
 }
