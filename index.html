@@ -9,29 +9,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <header id="header"class="fixed-nav bg-blue-900 shadow-md">
+    <header id="header" class="fixed-nav bg-blue-900 shadow-md">
         <div class="container mx-auto p-4 flex justify-between items-center">
             <a href="#" class="text-lg font-semibold text-white">
                 <img src="assets/img/hap-inter-logo.png" alt="Logo Hapvida" style="height: 30px;">
             </a>
             <nav>
                 <ul class="flex space-x-4">
-                    <li><a href="#header" class="text-gray-100 hover:text-white">Página Inicial</a></li>
-                    <li><a href="#planos" class="text-gray-100 hover:text-white">Planos</a></li>
-                    <li><a href="#beneficios" class="text-gray-100 hover:text-white">Benefícios</a></li>
-                    <li><a href="#rede-de-atendimento" class="text-gray-100 hover:text-white">Rede de atendimento</a></li>
-                    <li><a href="#carencias" class="text-gray-100 hover:text-white">Carências</a></li>
-                    <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+estou+em+seu+site+e+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" class="text-gray-100 hover:text-white" target="_blank">Contratar plano</a>
+                    <li><a href="#header" class="nav-link">Página Inicial</a></li>
+                    <li><a href="#planos" class="nav-link">Planos</a></li>
+                    <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                    <li><a href="#rede-de-atendimento" class="nav-link">Rede de atendimento</a></li>
+                    <li><a href="#carencias" class="nav-link">Carências</a></li>
+                    <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+estou+em+seu+site+e+gostaria+de+um+or%C3%A7amento.&type=phone_number&app_absent=0" class="nav-link" target="_blank">Contratar plano</a>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-    <!-- Banner -->
-    <section class="full-width-image">
-        <img src="assets/img/banner2.png" alt="Imagem 1" class="full-width">
-    </section>
+        <!-- Banner -->
+        <section class="full-width-image">
+            <picture>
+                <source srcset="assets/img/banner.mobile.png" media="(max-width: 768px)">
+                <img src="assets/img/banner2.png" alt="Imagem 1" class="full-width">
+            </picture>
+        </section>
+    </main>
+
 
     <!-- Benefícios -->
     <section id="beneficios"class="hapvida-benefits">
