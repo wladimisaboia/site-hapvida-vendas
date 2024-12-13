@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hospitals = [
         {
-            img: 'assets/img/hospital-aldeota.png',
+            img: 'assets/img/hospital-aldeota.jpg',
             name: 'Hospital Aldeota',
             location: 'Av. Pe. Antônio Tomás, 2056 - Aldeota - Fortaleza - CE'
         },
