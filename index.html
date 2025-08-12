@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="assets/js/config.js"></script>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <header id="header" class="fixed-nav bg-blue-900 shadow-md w-full">
@@ -53,7 +54,8 @@
         var menu = document.getElementById('navbar-menu');
         menu.classList.toggle('hidden');
     });
-        
+
+    // Smooth scroll para links internos apenas
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             if (this.getAttribute('href') === '#') return;
@@ -84,8 +86,8 @@
         <!-- Banner -->
         <section class="full-width-image">
             <picture>
-                <source srcset="assets/img/banner15Mobile.png" media="(max-width: 768px)">
-                <img src="assets/img/bannerPromo15.png" alt="Imagem 1" class="full-width">
+                <source srcset="assets/img/banner.mobile.png" media="(max-width: 768px)">
+                <img src="assets/img/banner2.png" alt="Imagem 1" class="full-width">
             </picture>
         </section>
     </main>
@@ -139,76 +141,52 @@
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">Nossos Planos</h2>
             <div class="flex flex-wrap justify-center">
-                <!-- Plano Ambulatorial -->
-                <div class="w-full sm:w-1/3 lg:w-1/4 mb-8 px-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-full sm:w-1/3 lg:w-1/4 mb-8 px-4" data-aos="fade-up" data-aos-delay="100" id="plano-ambulatorial">
                     <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
                         <h3 class="text-2xl font-bold mb-4">Plano Ambulatorial</h3>
-                        <div class="mb-4">
-                            <div class="flex items-baseline gap-2">
-                                <s class="text-xl text-gray-400">R$182,56</s>
-                                <span class="text-3xl font-semibold text-green-600">R$155,17</span>
-                            </div>
-                            <div class="text-sm text-gray-600 mt-1">Nos 3 primeiros pagamentos</div>
-                        </div>
+                        <div class="text-3xl font-semibold text-blue-500 mb-4">R$182,56</div>
                         <div class="mb-4 text-gray-600">0 a 18 anos</div>
                         <ul class="mb-6 text-left space-y-2">
-                            <li>✅ Urgência e emergência</li>
-                            <li>✅ Consultas</li>
-                            <li>✅ Exames</li>
-                            <li>✅ Odonto urgente</li>
-                            <li>❌ Internações</li>
-                            <li>❌ Cirurgias</li>
-                            <li>❌ Parto</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Urgência e emergência</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Consultas</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Exames</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Odonto urgente</li>
+                            <li><i class="fas fa-times text-red-500"></i> ❌ Internações</li>
+                            <li><i class="fas fa-times text-red-500"></i> ❌ Cirurgias</li>
+                            <li><i class="fas fa-times text-red-500"></i> ❌ Parto</li>
                         </ul>
                         <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+gostaria+de+contratar+o+plano+ambulatorial+Hapvida.&type=phone_number&app_absent=0" target="_blank" class="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold block text-center transition duration-300 hover:bg-blue-600">CONTRATAR</a>
                     </div>
                 </div>
-    
-                <!-- Plano Completo -->
-                <div class="w-full sm:w-1/3 lg:w-1/4 mb-8 px-4" data-aos="fade-up">
+                <div class="w-full sm:w-1/3 lg:w-1/4 mb-8 px-4" data-aos="fade-up" id="plano-completo">
                     <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 relative">
-                        <span class="bg-yellow-400 text-white px-3 py-1 rounded-full mb-4 inline-block absolute top-0 right-0 transform translate-x-2 -translate-y-2">+ VENDIDO</span>
                         <h3 class="text-2xl font-bold mb-4">Plano completo</h3>
-                        <div class="mb-4">
-                            <div class="flex items-baseline gap-2">
-                                <s class="text-xl text-gray-400">R$218,82</s>
-                                <span class="text-3xl font-semibold text-green-600">R$185,99</span>
-                            </div>
-                            <div class="text-sm text-gray-600 mt-1">Nos 3 primeiros pagamentos</div>
-                        </div>
+                        <div class="text-3xl font-semibold text-blue-500 mb-4">R$218,82</div>
                         <div class="mb-4 text-gray-600">0 a 18 anos</div>
                         <ul class="mb-6 text-left space-y-2">
-                            <li>✅ Urgência e emergência</li>
-                            <li>✅ Consultas</li>
-                            <li>✅ Exames</li>
-                            <li>✅ Internações</li>
-                            <li>✅ Cirurgias</li>
-                            <li>✅ Parto</li>
-                            <li>✅ Odontologia</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Urgência e emergência</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Consultas</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Exames</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Internações</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Cirurgias</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Parto</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Odontologia</li>
                         </ul>
                         <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+gostaria+de+contratar+o+plano+completo+de+pessoa+f%C3%ADsica+Hapvida.&type=phone_number&app_absent=0" target="_blank" class="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold block text-center transition duration-300 hover:bg-blue-600">CONTRATAR</a>
                     </div>
                 </div>
-    
-                <!-- Plano Empresarial -->
-                <div class="w-full sm:w-1/3 lg:w-1/4 mb-8 px-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-full sm:w-1/3 lg:w-1/4 mb-8 px-4" data-aos="fade-up" data-aos-delay="200" id="plano-empresarial">
                     <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
                         <h3 class="text-2xl font-bold mb-4">Plano completo (empresarial)</h3>
-                        <div class="mb-4">
-                            <div class="flex items-baseline gap-2">
-                                <s class="text-xl text-gray-400">R$175,39</s>
-                                <span class="text-3xl font-semibold text-green-600">R$149,08</span>
-                            </div>
-                            <div class="text-sm text-gray-600 mt-1">Nos 3 primeiros pagamentos</div>
-                        </div>
+                        <div class="text-3xl font-semibold text-blue-500 mb-4">R$175,39</div>
                         <div class="mb-4 text-gray-600">0 a 18 anos</div>
                         <ul class="mb-6 text-left space-y-2">
-                            <li>✅ Urgência e emergência</li>
-                            <li>✅ Consultas</li>
-                            <li>✅ Exames</li>
-                            <li>✅ Internações</li>
-                            <li>✅ Cirurgias</li>
-                            <li>✅ Parto</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Urgência e emergência</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Consultas</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Exames</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Internações</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Cirurgias</li>
+                            <li><i class="fas fa-check text-green-500"></i> ✅ Parto</li>
                         </ul>
                         <a href="https://api.whatsapp.com/send/?phone=5585991465012&text=Oi%2C+gostaria+de+contratar+o+plano+empresarial+Hapvida.&type=phone_number&app_absent=0" target="_blank" class="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold block text-center transition duration-300 hover:bg-blue-600">CONTRATAR</a>
                     </div>
@@ -216,6 +194,7 @@
             </div>
         </div>
     </section>
+
 
    <!-- Rede de Atendimento -->
     <section id="rede-de-atendimento" class="py-20 hapvida-orange text-white">
@@ -280,7 +259,7 @@
                 <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
             </svg>
         </a>
-        <a href="https://www.instagram.com/planosdesaude_wladimi/" target="_blank" class="text-white-900 hover:text-gray-900">
+        <a href="https://www.instagram.com/planodesaude_wladimi/" target="_blank" class="text-white-900 hover:text-gray-900">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
             </svg>
